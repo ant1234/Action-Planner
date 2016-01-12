@@ -6,14 +6,18 @@
   <div class="container">
     <header>
 
-      <h1>Action Planner </h1>
-      
+      <h1>Tasks To Complete: ({{incompleteCount}}) </h1>
+
+      <label class="hide-completed">
+      	<input type="checkbox" checked="{{hideCompleted}}">
+      	Hide Completed Tasks
+      </label>
+
+      {{> loginButtons}}
 
       <!-- Form to insert tasks into the database -->
       <form class="new-task">
-
         <input type="text" name="text" placeholder="Type to add new tasks" />
-
       </form>
 
 
